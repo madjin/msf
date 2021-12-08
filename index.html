@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>MSF</title>
+</head>
+<body>
+<FireBoxRoom>
+ <Assets>
+  <AssetScript src="arcade.js"/>
+  <AssetObject id="woodcabinet" src="https://vesta.janusxr.org/files/bepis/obj/cabinets/2/wood_cabinet.obj"/>
+  <AssetObject id="arcademachine" src="http://assets.metacade.com/metacade/cabinet/cabinet-modified.dae.gz"/>
+  <AssetObject id="ti85" src="http://assets.metacade.com/metacade/ti85/ti85.dae.gz"/>
+  <AssetImage id="envmap-interior" src="http://assets.metacade.com/metacade/flynns-v5/envmap-interior.jpg"/>
+  <AssetImage hasalpha="false" id="sky_left" src="http://assets.metacade.com/metacade/skybox/nx.jpg"/>
+  <AssetImage hasalpha="false" id="sky_right" src="http://assets.metacade.com/metacade/skybox/px.jpg"/>
+  <AssetImage hasalpha="false" id="sky_front" src="http://assets.metacade.com/metacade/skybox/pz.jpg"/>
+  <AssetImage hasalpha="false" id="sky_back" src="http://assets.metacade.com/metacade/skybox/nz.jpg"/>
+  <AssetImage hasalpha="false" id="sky_up" src="http://assets.metacade.com/metacade/skybox/py.jpg"/>
+  <AssetImage hasalpha="false" id="sky_down" src="http://assets.metacade.com/metacade/skybox/ny.jpg"/>
+  <AssetObject id="ibmpc" src="http://assets.metacade.com/metacade/ibmpc/ibmpc.dae.gz"/>
+ </Assets>
+ <Room ambient="0.4 0.4 0.4" far_dist="5000" fog="true" fog_col="#7f7f7f" fog_density=".01" fog_end="5000" fog_mode="linear" fog_start="0.1" pbr="true" pos="0 .5 0" shadows="true" skybox_back_id="sky_back" skybox_down_id="sky_down" skybox_front_id="sky_front" skybox_left_id="sky_left" skybox_right_id="sky_right" skybox_up_id="sky_up" use_local_asset="room_plane" zdir="0 0 -1">
+  <light light_intensity="9" light_range="30" light_shadow="true" pos="0 7 -5"/>
+  <aacabinet cabinet_id="arcademachine" controlpanel_part_name="cabinet-front" js_id="supersmashland" marquee_part_name="cabinet-marquee" msf='{"title":"SuperSmashLand","file":"SuperSmashLand.exe","screen":"http://www.supersmashland.com/imgs/screenshot1.png","marquee":"https://i.ytimg.com/vi/KVROb_FPZCc/maxresdefault.jpg","preview":"https://www.youtube.com/watch?v=351CO5_8fbM","download":"http://www.supersmashland.com/","reference":"http://en.wikipedia.org/wiki/Super_Smash_Land","description":"Super Smash Land is a demake of Super Smash Bros. released in September 14, 2011 by Dan Fornace. The game features 6 playable characters and 11 stages. The game visual design resembles the graphics from the Nintendo Game Boy. The game was developed with GameMaker 7.","keywords":"retro, nintendo","type":"pc"}' pos="0 0 -2" scale="1.25 1.25 1.25" screen_part_name="screen"/>
+  <aacabinet cabinet_id="ibmpc" controlpanel_part_name="cabinet-front" js_id="neondrive" marquee_part_name="cabinet-marquee" msf='{"title":"Neon Drive","file":"steam://run/433910","screen":"http://cdn.steamstatic.com/steam/apps/433910/header.jpg","preview":"http://www.youtube.com/watch?v=UTkioWWjpsw","reference":"http://store.steampowered.com/app/433910","type":"pc"}' pos="-1 1 -2" scale="1.25 1.25 1.25" screen_part_name="ibmpc-monitor-screen"/>
+  <aacabinet cabinet_id="arcademachine" controlpanel_part_name="cabinet-front" js_id="simpsons" marquee_part_name="cabinet-marquee" msf='{"title":"The Simpsons","file":"https://www.hulu.com/the-simpsons","screen":"http://a248.e.akamai.net/ib.huluim.com/show_key_art/58?size=1280x720","marquee":"http://assetshuluimcom-a.akamaihd.net/h2o/facebook_share_thumb_default_hulu.png","description":"Watch The Simpsons online. Stream episodes and clips of The Simpsons instantly.","keywords":"homer, bart","type":"tv"}' pos="1 0 -2" scale="1.25 1.25 1.25" screen_part_name="screen"/>
+  <aacabinet cabinet_id="arcademachine" controlpanel_part_name="cabinet-front" js_id="botnit" marquee_part_name="cabinet-marquee" msf='{"title":"Botnit - Hi-Score","file":"https://www.youtube.com/watch?v=8wDrUPlo15M","screen":"http://img.youtube.com/vi/8wDrUPlo15M/0.jpg","description":"Reupload of the classic Maniac Synth video","type":"youtube"}' pos="2 0 -2" scale="1.25 1.25 1.25" screen_part_name="screen"/>
+  <aacabinet cabinet_id="ti85" js_id="ds9" msf='{"title":"Star Trek: Deep Space Nine on Netflix","file":"https://www.netflix.com/title/70158330","screen":"https://wallpapercave.com/wp/pBL9PTN.jpg","type":"tv"}' pos="-2 1 -2" scale="3.25 3.25 3.25" screen_part_name="ti85-screen_001"/>
+ </Room>
+</FireBoxRoom>
+<script src="https://web.janusxr.org/1.5.33/janusweb.js"></script>
+<script>elation.janusweb.init({url: document.location.href})</script>
+</body>
+</html>
